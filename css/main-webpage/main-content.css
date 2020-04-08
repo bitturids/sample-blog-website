@@ -1,0 +1,78 @@
+main {
+    grid-area: main;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr 8fr;
+    grid-template-rows: min-content auto auto min-content;
+    grid-template-areas: ". box1 box2 .";
+}
+
+@media(max-width:900px) {
+    .main-box {
+        display: grid;
+        grid-template-columns: 6fr 50fr 6fr;
+        grid-template-rows: min-content auto min-content;
+        grid-template-areas: ". box1 ." ". box2 .";
+    }
+}
+
+.box1 {
+    grid-area: box1;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin: 0 1em 1em 1em;
+}
+
+.box2 {
+    grid-area: box2;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin: 0 1em 1em 1em;
+}
+
+.box>h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+}
+
+.box>.content-normal {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.title-head {
+    font-family: 'Abril Fatface';
+    font-weight: bold;
+}
+
+.category {
+    margin-bottom: 10px;
+}
+
+.category[data-status="world"] {
+    color: blue;
+}
+
+.category[data-status="design"] {
+    color: rgb(28, 231, 79);
+}
+
+.date {
+    color: rgb(148, 145, 145);
+}
+
+.continue {
+    color: blue;
+    float: left;
+    margin-top: 30px;
+    font-size: 0.8em;
+}
+
+.continue:hover {
+    color: purple;
+}

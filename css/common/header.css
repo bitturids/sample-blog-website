@@ -1,0 +1,28 @@
+header {
+    grid-area: header;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#subscrb {
+    color: gray;
+}
+
+#btn-search {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+#header-title {
+    margin: 2px;
+    text-decoration: underline;
+    font-family: 'Abril Fatface';
+}

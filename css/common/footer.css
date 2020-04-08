@@ -1,0 +1,16 @@
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgb(179, 176, 176);
+}
+
+#footer>p:first-of-type {
+    margin-bottom: 0px;
+}

@@ -1,0 +1,9 @@
+@import url("../common/header.css");
+@import url("../common/footer.css");
+@import url("main-content.css");
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 5em auto 5em;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+}

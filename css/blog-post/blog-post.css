@@ -1,0 +1,82 @@
+@import url("../common/header.css");
+@import url("../common/footer.css");
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: 5em auto 5em;
+    grid-template-areas: "header header header header"". main aside .""footer footer footer footer";
+    grid-column-gap: 2em;
+}
+
+@media(max-width:900px) {
+    body {
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        grid-template-rows: 5em auto auto 5em;
+        grid-template-areas: "header header header"". main ."". aside .""footer footer footer";
+        grid-column-gap: 2em;
+    }
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+#blog-header>h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+.border-content {
+    border: 1px solid gray;
+    padding: 0.5em;
+}
+
+#archives {
+    padding-bottom: 1em;
+}
+
+#archives>ul,
+#elsewhere>ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+#archives>ul>li,
+#elsewhere>ul>li {
+    padding: 0.3em 0;
+}
+
+.btn {
+    border: 1px solid gray;
+    border-radius: 25px;
+    font-size: 1em;
+    background: none;
+    padding: 1em;
+}
+
+.other-posts {
+    display: flex;
+}
+
+.back-link {
+    margin-left: auto;
+    text-align: center;
+}
+
+.active,
+.btn:hover {
+    border: 1px solid skyblue;
+    color: skyblue;
+}
+
+.link {
+    color: rgb(44, 34, 187);
+}
