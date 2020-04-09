@@ -80,3 +80,8 @@ h5 {
 .link {
     color: rgb(44, 34, 187);
 }
+
+figure>img {
+    height: 8em;
+    width: 10em;
+}
